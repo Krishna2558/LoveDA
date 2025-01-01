@@ -1,3 +1,4 @@
+'''
 import importlib
 import logging
 import time
@@ -63,7 +64,7 @@ def get_console_file_logger(name, level=logging.INFO, logdir='./baseline'):
 
     return logger
 
-
+'''
 def loss_calc(pred, label, reduction='mean'):
     """
     This function returns cross entropy loss for semantic segmentation
@@ -72,7 +73,7 @@ def loss_calc(pred, label, reduction='mean'):
     loss = F.cross_entropy(pred, label.long(), ignore_index=-1, reduction=reduction)
    
     return loss
-    
+    '''
 
 def bce_loss(pred, label):
     """
@@ -232,4 +233,4 @@ def count_model_parameters(module, _default_logger=None):
 if __name__ == '__main__':
     seed_torch(2333)
     s = torch.randn((5, 5)).cuda()
-    print(s)
+    print(s)'''
